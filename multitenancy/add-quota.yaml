@@ -19,6 +19,7 @@ spec:
             matchLabels:
               type: small
       generate:
+        synchronize: true
         kind: ResourceQuota
         name: quota-sm
         apiVersion: v1
@@ -47,6 +48,7 @@ spec:
             matchLabels:
               type: medium
       generate:
+        synchronize: true
         kind: ResourceQuota
         apiVersion: v1
         name: quota-md
@@ -75,6 +77,7 @@ spec:
             matchLabels:
               type: large
       generate:
+        synchronize: true
         kind: ResourceQuota
         apiVersion: v1
         name: quota-lg

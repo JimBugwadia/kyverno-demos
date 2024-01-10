@@ -64,6 +64,7 @@ spec:
             matchLabels:
               type: large
       generate:
+        synchronize: true
         kind: LimitRange
         apiVersion: v1
         name: limit-range-lg
